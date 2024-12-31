@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Sailor Bootstrap Template</title>
+  <title>MEDIPRISM</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,56 +26,34 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body class="about-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Sailor</h1>
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">MEDIPRISM</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li class="dropdown"><a href="about.html" class="active"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Members</a></li>
+          <li><a href="services.html">Consulting Services</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link" id="aboutDropdown" onclick="toggleDropdown(event)">
+              About Products <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a class="dropdown-item" href="service-details.html">제품 스펙</a></li>
+              <li><a class="dropdown-item" href="about.html">제품 소개</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#downloadModal">제품 다운로드</a></li>
             </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        </li>           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="about.html">Get Started</a>
-
     </div>
   </header>
 
@@ -103,95 +81,97 @@
 
           <div class="col-lg-5">
             <div class="about-img">
-              <img src="assets/img/about-portrait.jpg" class="img-fluid" alt="">
+              <img src="assets/img/about-portrait.gif" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-7">
-            <h3 class="pt-0 pt-lg-5">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3>
+            <h3 class="pt-0 pt-lg-5">당근 (Carrot Viewer): 최신 DICOM 및 의료 영상 처리 도구</h3>
 
             <!-- Tabs -->
             <ul class="nav nav-pills mb-3">
-              <li><a class="nav-link active" data-bs-toggle="pill" href="#about-2-tab1">Saepe fuga</a></li>
-              <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab2">Voluptates</a></li>
-              <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab3">Corrupti</a></li>
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#about-2-tab1">당근 DICOM Viewer</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab2">Segmentation 기능</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab3">의료 인공지능</a></li>
             </ul><!-- End Tabs -->
 
             <!-- Tab Content -->
             <div class="tab-content">
 
               <div class="tab-pane fade show active" id="about-2-tab1">
-
-                <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <p class="fst-italic">당근(Carrot viewer)은 다양한 형식의 DICOM 이미지를 지원하고, 빠르고 직관적인 사용자 경험을 제공합니다. 어떤 의료 이미지를 다루더라도, 당근은 고성능 뷰어로 모든 의료 영상 데이터를 쉽게 확인하고 관리할 수 있게 해줍니다.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                  <h4>DICOM 형식 완벽 지원</h4>
                 </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                <p>당근은 DICOM 이미지뿐만 아니라, 다양한 의료 영상 파일을 신속하게 로드하고 표시할 수 있습니다. 병원과 연구기관에서 사용하는 표준 DICOM 데이터를 간편하게 불러오고 분석할 수 있습니다.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                  <h4>빠르고 직관적인 사용자 인터페이스</h4>
                 </div>
-                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                <p>직관적인 UI로 의료 이미지를 확인하고 분석하는데 있어 시간 낭비가 없습니다. 의료 전문가들이 효율적으로 작업할 수 있도록 설계되었습니다.</p>
 
               </div><!-- End Tab 1 Content -->
 
               <div class="tab-pane fade" id="about-2-tab2">
-
-                <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <p class="fst-italic">Segmentation 기능을 통해 의료 이미지를 분석하고, 특정 영역을 추출하여 진단 및 분석 작업을 돕습니다. 당근은 정밀한 세분화와 빠른 처리 속도로 의료 영상 분석을 효율적으로 지원합니다.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                  <h4>정확한 세분화 지원</h4>
                 </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                <p>당근은 정밀한 세분화 기능을 통해 의료 영상의 중요한 영역을 자동으로 구분하여, 분석을 돕고 진단 정확도를 향상시킵니다.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                  <h4>효율적인 분석 지원</h4>
                 </div>
-                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                <p>Segmentation 기능을 통해 특정 질병이나 이상 부위를 자동으로 추출하고 분석할 수 있습니다. 이 기능은 의료 전문가가 더욱 효율적으로 진단할 수 있도록 돕습니다.</p>
 
               </div><!-- End Tab 2 Content -->
 
               <div class="tab-pane fade" id="about-2-tab3">
-
-                <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <p class="fst-italic">당근은 최신 의료 인공지능(AI) 기술을 탑재하여, 사용자에게 맞춤형 의료 인공지능 솔루션을 제시하고, 작업에 적합한 AI 모델을 추천해 줍니다.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                  <h4>의료 인공지능 활용</h4>
                 </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                <p>당근은 의료 인공지능을 활용하여, 이미지를 분석하고 최적의 진단 결과를 제공합니다. AI 모델을 사용하여 의료 영상에서 패턴을 식별하고 진단을 보조합니다.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                  <h4>사용자 맞춤형 인공지능 제안</h4>
                 </div>
-                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                <p>당근은 사용자의 작업에 맞는 AI 모델을 추천하고, 의료 데이터에 최적화된 솔루션을 제공합니다. 이를 통해 각 환자의 데이터를 정확하게 분석하고, 보다 효과적인 진단을 가능하게 합니다.</p>
 
               </div><!-- End Tab 3 Content -->
 
+            </div>
+
+            <!-- 다운로드 버튼 -->
+            <div class="text-center mt-5">
+              <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#downloadModal">제품 다운로드</button>
+            </div>
+
+            <!-- 다운로드 팝업 모달 -->
+            <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="downloadModalLabel">다운로드 준비 중</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    제품 다운로드는 준비 중입니다. 잠시만 기다려 주세요.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -202,269 +182,7 @@
 
     </section><!-- /About 2 Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Check Our Skills<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
   </main>
-
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Sailor</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sailor</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
-    </div>
-
-  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -485,7 +203,23 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+    <!-- Modal for Download -->
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="downloadModalLabel">다운로드 준비 중</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            제품 다운로드는 준비 중입니다. 잠시만 기다려 주세요.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>

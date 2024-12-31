@@ -38,10 +38,19 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="services.html">Consulting Services</a></li>
-          <li><a href="about.html"><span>About Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Members</a></li>
+          <li><a href="services.html" class="active">Consulting Services</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link" id="aboutDropdown" onclick="toggleDropdown(event)">
+              About Products <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a class="dropdown-item" href="service-details.html">제품 스펙</a></li>
+              <li><a class="dropdown-item" href="about.html">제품 소개</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#downloadModal">제품 다운로드</a></li>
+            </ul>
+        </li>          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -129,7 +138,7 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2">AI 기반 분석 시스템</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">정확한 진단 및 예측</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">빠르고 효율적인 영상 관리</a>
               </li>
             </ul>
           </div>
@@ -139,7 +148,7 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>최첨단 의료 영상 처리 기술</h3>
-                    <p class="fst-italic">우리는 최신 의료 영상 처리 기술을 활용하여, 복잡한 의료 데이터를 분석하고 효율적으로 관리합니다. 전문적인 후처리 및 라벨링 작업을 통해 의료 영상의 정확성과 신뢰성을 높입니다.</p>
+                    <p class="fst-italic">우리는 최신 의료 영상 처리 기술을 활용하여, 복잡한 의료 데이터를 효율적으로 관리합니다. 전문적인 후처리 및 라벨링 작업을 통해 의료 영상의 정확성과 신뢰성을 높입니다.</p>
                     <p>우리의 솔루션은 의료 전문가와 협력하여 진행되며, 특히 의료 영상에 대한 세밀한 분석을 필요로 하는 분야에서 큰 강점을 보입니다. 각종 의료 데이터는 정밀하게 처리되어 인공지능 모델 학습에 최적화됩니다. 이를 통해 병원, 연구기관 및 기업들은 보다 빠르고 정확한 진단을 지원받을 수 있습니다. 또한, 의료 영상의 후처리 작업은 의료진의 전문적 검토를 거쳐 진행되므로, 높은 정확도와 신뢰성을 제공합니다.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -164,9 +173,9 @@
               <div class="tab-pane" id="features-tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>정확한 진단 및 예측</h3>
-                    <p class="fst-italic">우리의 고도화된 분석 툴은 환자의 데이터를 기반으로 정확한 진단을 내리고, 치료가 필요한 시점을 예측합니다. 이를 통해 의료진은 더 나은 결정을 내리고, 환자의 생명과 건강을 지킬 수 있습니다.</p>
-                    <p>이 시스템은 다양한 진단을 실시간으로 처리하며, 의사들이 더 빠르고 정확하게 치료 계획을 세울 수 있도록 지원합니다. 예측 분석을 통해 질병의 조기 발견도 가능하게 됩니다.</p>
+                    <h3>빠르고 효율적인 영상 관리</h3>
+                    <p class="fst-italic">MEDIPRISM에서 제공하는 DICOM VIEWER는 빠르고 임상 편의적입니다 이를 통해 의료진을 돕습니다.</p>
+                    <p>이 시스템은 다양한 영상을 실시간으로 처리하며, 의사들이 더 빠르고 정확하게 치료 계획을 세울 수 있도록 지원합니다.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/tabs/tab-3.png" alt="" class="img-fluid">
@@ -202,6 +211,23 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+      <!-- Modal for Download -->
+      <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="downloadModalLabel">다운로드 준비 중</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              제품 다운로드는 준비 중입니다. 잠시만 기다려 주세요.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 </body>
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Sailor Bootstrap Template</title>
+  <title>MEDIPRISM</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,56 +26,35 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body class="service-details-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Sailor</h1>
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">MEDIPRISM</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Members</a></li>
+          <li><a href="services.html">Consulting Services</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link" id="aboutDropdown" onclick="toggleDropdown(event)">
+              About Products <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a class="dropdown-item" href="service-details.html">제품 스펙</a></li>
+              <li><a class="dropdown-item" href="about.html">제품 소개</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#downloadModal">제품 다운로드</a></li>
             </ul>
           </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="about.html">Get Started</a>
-
     </div>
   </header>
 
@@ -84,133 +63,63 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <h1 class="mb-2 mb-lg-0">제품 스펙</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
+            <li class="current">제품 스펙</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-
+    <!-- Product Specs Section -->
+    <section id="product-specs" class="product-specs section">
       <div class="container">
+        <div class="row">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
+          <!-- 제품 스펙 카드 1 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="spec-card">
+              <h5 class="spec-card-title">기본 정보</h5>
+              <ul class="spec-list">
+                <li><strong>언어:</strong> C# (ASP.NET, WPF), Python</li>
+                <li><strong>프레임워크:</strong> .NET Framework 5.0 / .NET Core 3.1</li>
+                <li><strong>호환성:</strong> Windows, macOS, Linux (크로스 플랫폼 지원)</li>
+              </ul>
             </div>
-
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
           </div>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
+          <!-- 제품 스펙 카드 2 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="spec-card">
+              <h5 class="spec-card-title">기능</h5>
+              <ul class="spec-list">
+                <li>다양한 DICOM 이미지 형식 지원</li>
+                <li>빠르고 직관적인 의료 영상 뷰어</li>
+                <li>Nifti 형식 지원</li>
+                <li>세분화(Segmentation) 기능</li>
+                <li>사용자 맞춤형 의료 인공지능 통합</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 제품 스펙 카드 3 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="spec-card">
+              <h5 class="spec-card-title">시스템 요구 사항</h5>
+              <ul class="spec-list">
+                <li><strong>OS:</strong> Windows 10 이상, macOS Catalina 이상</li>
+                <li><strong>기타:</strong> 실시간 AI 기반 의료 이미지 분석 기능 제공</li>
+              </ul>
+            </div>
           </div>
 
         </div>
-
       </div>
-
-    </section><!-- /Service Details Section -->
+    </section><!-- End Product Specs Section -->
 
   </main>
-
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Sailor</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sailor</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
-    </div>
-
-  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
